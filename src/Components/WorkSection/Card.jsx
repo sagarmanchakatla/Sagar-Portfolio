@@ -5,7 +5,9 @@ function Card({ item, key }) {
         <img src={item.img} alt="" />
       </div>
       <div className="text-sm sm:w-[130px]">
-        <a href="" className="font-lg text-[17px] underline">{item.title}</a>
+        <a href={item.redirect} className="font-lg text-[17px] underline">
+          {item.title}
+        </a>
         <p className="w-[180px] text-[#caccd3]">{item.desc}</p>
         <p className="w-[180px] text-[#727888]">{item.tech}</p>
       </div>
