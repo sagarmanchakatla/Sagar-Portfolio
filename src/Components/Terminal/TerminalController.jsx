@@ -27,17 +27,23 @@ const TerminalController = () => {
     ),
     about:
       "I am a dedicated student currently learning Full Stack Web Development and exploring the exciting field of Artificial Intelligence and Machine Learning.",
-    skills: (
-      <div>
+    skills: () => {
+      document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
+      return (
         <div>
-          <strong>Frontend:</strong> HTML, CSS, JavaScript, ReactJS
+          <div>
+            <strong>Frontend:</strong> HTML, CSS, JavaScript, ReactJS
+          </div>
+          <div>
+            <strong>Backend:</strong> NodeJS, Python, MongoDB
+          </div>
         </div>
-        <div>
-          <strong>Backend:</strong> NodeJS, Python, MongoDB
-        </div>
-      </div>
-    ),
-    contact: "You can reach me at sagarmanchakatla01@gmail.com",
+      );
+    },
+    contact: () => {
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+      return "You can reach me at sagarmanchakatla01@gmail.com";
+    },
     clear: () => terminalRef.current.clearStdout(),
   };
 
