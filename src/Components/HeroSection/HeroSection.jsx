@@ -11,9 +11,7 @@ function HeroSection() {
         </div>
         <div className="text-center sm:ml-20 sm:text-left">
           <h1 className="text-3xl font-bold italic">I'm Sagar Manchakatla</h1>
-          <p className="mt-2 text-lg">
-            Full Stack Web Developer, AI/ML Enthusiast
-          </p>
+          <p className="mt-2 text-lg">Web Developer, AI/ML Enthusiast</p>
         </div>
       </div>
       <div className="mt-[55px] font-light">
@@ -26,7 +24,7 @@ function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Full Stack Web Development
+              Web Development
             </a>
           </span>{" "}
           , while also exploring the rapidly evolving fields of{" "}
